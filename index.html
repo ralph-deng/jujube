@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="index.js" defer></script>
+  </head>
+<body>
+  <div class="list">
+    <div class="task">
+      <input type="checkbox" />
+      <span class="description">todo one</span>
+      <span class="remove" event="click: log('from one')">x</span>
+    </div>
+    <div class="task">
+      <input type="checkbox" />
+      <span class="description">todo two</span>
+      <span class="remove" event="click: log('from two')">x</span>
+    </div>   
+  </div>
+  <div class="entry">
+    <input type="text" class="content" />
+    <span class="add" event="click: copy('.task').replace('.description', '.content').append('.list')">+</span>
+  </div>
+</body>
+</html>
